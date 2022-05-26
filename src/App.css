@@ -7,11 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -34,5 +29,41 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.container-img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  
+  
+}
+.container-img img{
+  width: 100%;
+}
+.container-img .span1{
+  position: absolute;
+  top: 8;
+  -webkit-text-stroke: 2px black;
+}
+.container-img .span2{
+  position: absolute;
+  bottom: 0;
+  -webkit-text-stroke: 2px black;
+ 
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+  .container-img{
+    
+    font-size: 1.8rem;
   }
 }
